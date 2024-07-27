@@ -1,5 +1,7 @@
 # Widgets
 
+<img src="./public/Apresentation.gif" alt="Texto Alternativo" width="300">
+
 ---
 
 - [x] Widget de Link para Whatsapp
