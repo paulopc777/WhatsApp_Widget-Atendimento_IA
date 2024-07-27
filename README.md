@@ -1,6 +1,6 @@
 # Widgets
 
-<img src="./public/Apresentation.gif" alt="Texto Alternativo" width="300">
+<img src="./public/Apresentation.gif" alt="Texto Alternativo" width="400">
 
 ---
 
