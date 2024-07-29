@@ -3,7 +3,7 @@ import React from "react";
 export default function MessageClient({Text}) {
 
   return (
-    <div className="flex flex-row-reverse animation_Message pl-2 pr-4 pt-4 translate-x-3">
+    <div className="flex flex-row-reverse animation_Message pl-2 pr-4 pt-4 translate-x-3 ">
 
       <div className="text-[#005C4B]">
         <svg
@@ -29,8 +29,8 @@ export default function MessageClient({Text}) {
         </svg>
       </div>
 
-      <div className="bg-[#005C4B] w-fit px-6 py-2 BoxMiniRunded2 text-white">
-        <p className="-translate-x-2">{Text}</p>
+      <div className="bg-[#005C4B]  w-fit max-w-full  BoxMiniRunded2 text-white ">
+        <p className="-translate-x-2 px-6 py-2 text-wrap break-all">{Text}</p>
       </div>
     </div>
   );

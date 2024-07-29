@@ -25,7 +25,7 @@ export default function Header({ Nome, Img, Number }) {
   }
 
   return (
-    <div className="w-full h_15 bg-[#202C33]  border_black rounded-t-lg flex items-center p-7 justify-between">
+    <div className="w-full h_15  bg-[#202C33]  border_black rounded-t-lg flex items-center p-7 justify-between">
       <div className="flex">
         <div className="bg-slate-200 rounded-full w-12 h-12">
           <img src={Img} alt={Nome} className="rounded-full" />

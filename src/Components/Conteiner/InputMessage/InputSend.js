@@ -22,7 +22,7 @@ export default function InputSend() {
       <input
         type="text"
         placeholder="Digite uma mensagem"
-        className="bg-[#26333A] p-2 outline-none border-none text-white rounded-lg"
+        className="bg-[#26333A] p-2 outline-none border-none w-3/4 text-white rounded-lg"
         value={Input}
         onChange={(e) => {
           setInput(e.target.value);
