@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "./Conteiner/Header/Header";
 import MessageConteiner from "./Conteiner/MessageConteiner";
 import InputSend from "./Conteiner/InputMessage/InputSend";
 import { motion } from "framer-motion";
 import useMessageStore from "../Redux/Messages";
-
-
+import IndexSocial from "./SocialMedia/IndexSocial";
 
 export default function Conversation({ Visible, model }) {
   const Messages = useMessageStore((state) => state.Messages);
@@ -42,12 +41,12 @@ export default function Conversation({ Visible, model }) {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="Conversation_call_h Conversation_call_w bg-slate-900 absolute right-20 bottom-36 runder_conteiner "
+          className="Conversation_call_h Conversation_call_w bg-slate-900 absolute right-16 bottom-28 runder_conteiner "
         >
           <Header
-            Nome={"VipPhone"}
-            Img={"img/user.png"}
-            Number={"988761325"}
+            Nome={process.env.REACT_APP_COMPANY_NAME}
+            Img={process.env.REACT_APP_COMPANY_IMAGE}
+            Number={process.env.REACT_APP_COMPANY_PHONE_NUMBER}
           ></Header>
 
           <div className="h_73  overflow-y-scroll overflow-x-hidden ">
@@ -66,6 +65,7 @@ export default function Conversation({ Visible, model }) {
           <div className="bottom-0 absolute w-full">
             <InputSend></InputSend>
           </div>
+          {/* {process.env.REACT_APP_OTHER_MEDIA ?? <IndexSocial />} */}
         </motion.div>
       ) : (
         ""

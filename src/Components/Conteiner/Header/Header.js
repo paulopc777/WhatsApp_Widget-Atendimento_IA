@@ -1,4 +1,5 @@
 import React from "react";
+import { ZapLink } from "../../Button/LinkZap/ZapLink";
 
 function formatPhoneNumber(phoneNumber) {
   // Remove todos os caracteres que não sejam números
@@ -42,12 +43,7 @@ export default function Header({ Nome, Img, Number }) {
         </div>
       </div>
 
-      {/* Link para zap */}
-      <div className="w-7 rounded-full green_filter translate-y-1">
-        <a href={`https://wa.me/${Number}`} className="text-sm font-light" >
-          <img src="/icon/WhatsApp.svg" alt="" className="w-full h-full" />
-        </a>
-      </div>
+      <ZapLink Number={Number} ></ZapLink>
     </div>
   );
 }
