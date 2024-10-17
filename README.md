@@ -1,28 +1,30 @@
-# Whatsapp_Widget - Chat_Atendimento_Por_IA 
-## OpenIA
-## ‎Gemini
+# WhatsApp Widget - Chat de Atendimento por IA
+## OpenAI Integration & Gemini
 
 <img src="./public/Apresentation.gif" alt="Texto Alternativo" width="400">
 
----
+**Funcionalidades**
 
-- [x] 100% da conversação feita por IA 
+- [x] Conversação 100% automatizada por IA
+- [x] Widget de link direto para o WhatsApp
+- [x] Componente de conversas em tempo real
+- [x] Ícone e número personalizáveis
 - [x] Widget de Link para Whatsapp
-- [x] Compoenete de Conversas em tempo real
-- [x] Icom e Numero personalizavel
 
-          
 
-### Run code
+## Como Executar
 
-```poweshell
-    npm i 
+ 1. Configure o arquivo .env.
+ 2. Instale as dependências e inicie o projeto com os seguintes comandos:
 
+
+
+```bash
+    npm install
     npm run start
 ```
 
----
+### Próximos Passos
 
-### Proximo
 
-- [ ] Criação de biblioteca para utilização
+- [ ] Criar biblioteca para reutilização do widget
